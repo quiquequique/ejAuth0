@@ -1,0 +1,8 @@
+<h1>Pagina protegida</h1>
+<h2>Datos del usuario almacenados en Auth0:</h2>
+<pre *ngIf='auth.user$ | async as profile'>
+    <code>
+        {{ profile | json }}
+    </code>
+</pre>
+<h2>Para que el loguin persista con redes sociales hay que configurar c/u de ellas para que acepten la conf desde Auth0</h2>
